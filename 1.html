@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Heap Sort Visualizer</title>
+  <link rel="stylesheet" href="1.css"/>
+</head>
+<body>
+  <header>
+    <h1>Heap Sort Visualizer</h1>
+  </header>
+  
+  <section class="controls">
+    <button id="startBtn">Start Sorting</button>
+    <button id="resetBtn">Reset</button>
+    <label for="speedSlider">Speed:</label>
+    <input type="range" id="speedSlider" min="50" max="1000" step="50" value="500"/>
+    <span id="speedValue">500ms</span>
+  </section>
+  
+  <section id="visualization"></section>
+  
+  <section class="explanation">
+    <h2>How It Works</h2>
+    <p>
+      This visualizer demonstrates <strong>Heap Sort</strong>. The array is first organized into a <em>max heap</em> (complete binary tree where each parent node is larger than its children). 
+      Then, the largest element is repeatedly swapped to the end of the array and removed from the heap.
+    </p>
+    <h3>Node Colors:</h3>
+    <ul>
+      <li><span class="legend legend-compare"></span> Currently compared nodes</li>
+      <li><span class="legend legend-swap"></span> Swapped nodes</li>
+      <li><span class="legend legend-sorted"></span> Sorted portion</li>
+      <li><span class="legend legend-default"></span> Unsorted nodes</li>
+    </ul>
+  </section>
+  
+  <footer>
+    <p>&copy; 2025 Heap Sort Visualizer</p>
+  </footer>
+  
+  <script src="1.js"></script>
+</body>
+</html>
